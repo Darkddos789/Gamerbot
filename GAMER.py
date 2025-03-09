@@ -370,7 +370,7 @@ async def run_attack_command_on_codespace(target_ip, target_port, duration, chat
             f"𝗔𝘁𝘁𝗮𝗰𝗸 𝗧𝗶𝗺𝗲: {duration} 𝐒𝐞𝐜.\n"
             f"𝗧𝗵𝗿𝗲𝗮𝗱𝘀: {thread_count}\n"
             f"𝗣𝗮𝗰𝗸𝗲𝘁 𝗦𝗶𝘇𝗲: {packet_size}\n"
-            f"᚛ ᚛ @Pk_Chopra ᚜ ᚜")
+            f"᚛ ᚛ @DARK_BGMISELLER ᚜ ᚜")
 
         # Create and run process without output
         process = await asyncio.create_subprocess_shell(
@@ -435,7 +435,7 @@ def attack_command(message):
     found_user = next((user for user in users if user['user_id'] == user_id), None)
 
     if not found_user:
-        bot.send_message(chat_id, "*You are not registered. Please redeem a key.\nContact For New Key:- ᚛ @Pk_Chopra ᚜*", parse_mode='Markdown')
+        bot.send_message(chat_id, "*You are not registered. Please redeem a key.\nContact For New Key:- ᚛ @DARK_BGMISELLER ᚜*", parse_mode='Markdown')
         return
 
     try:
@@ -507,7 +507,7 @@ def send_owner_info(message):
         bot.send_message(chat_id, "⚠️ This bot can only be used in the specific group. Please use it there.")
         return
 
-    owner_message = "This Bot Has Been Developed By ᚛ @Pk_Chopra ᚜"  
+    owner_message = "This Bot Has Been Developed By ᚛ @DARK_BGMISELLER ᚜"  
     bot.send_message(message.chat.id, owner_message)
 
 @bot.message_handler(commands=['addadmin'])
@@ -666,7 +666,7 @@ def send_welcome(message):
 
     if is_super_admin(user_id):
         welcome_message = (
-            f"Welcome, Super Admin! Developed By ᚛ @Pk_Chopra ᚜\n\n"
+            f"Welcome, Super Admin! Developed By ᚛ @DARK_BGMISELLER ᚜\n\n"
             f"Admin Commands:\n"
             f"/addadmin - Add new admin\n"
             f"/removeadmin - Remove admin\n"
@@ -679,7 +679,7 @@ def send_welcome(message):
     elif is_admin(user_id):
         balance = get_admin_balance(user_id)
         welcome_message = (
-            f"Welcome, Admin! Developed By ᚛ @Pk_Chopra ᚜\n\n"
+            f"Welcome, Admin! Developed By ᚛ @DARK_BGMISELLER ᚜\n\n"
             f"Your Balance: {balance}\n\n"
             f"Admin Commands:\n"
             f"/genkey - Generate new key\n"
@@ -688,12 +688,12 @@ def send_welcome(message):
         )
     else:
         welcome_message = (
-            f"Welcome, {username}! Developed By ᚛ @Pk_Chopra ᚜\n\n"
+            f"Welcome, {username}! Developed By ᚛ @DARK_BGMISELLER ᚜\n\n"
             f"Please redeem a key to access bot functionalities.\n"
             f"Available Commands:\n"
             f"/redeem - To redeem key\n"
             f"/Attack - Start an attack\n\n"
-            f"Contact ᚛ @Pk_Chopra ᚜ for new keys"
+            f"Contact ᚛ @DARK_BGMISELLER ᚜ for new keys"
         )
 
     bot.send_message(message.chat.id, welcome_message, reply_markup=markup)
@@ -710,7 +710,7 @@ def genkey_command(message):
     user_id = message.from_user.id
 
     if not is_admin(user_id):
-        bot.send_message(chat_id, "*You are not authorized to generate keys.\nContact Owner: ᚛ @Pk_Chopra ᚜*", parse_mode='Markdown')
+        bot.send_message(chat_id, "*You are not authorized to generate keys.\nContact Owner: ᚛ @DARK_BGMISELLER ᚜*", parse_mode='Markdown')
         return
 
     cmd_parts = message.text.split()
@@ -855,7 +855,7 @@ def remove_user_command(message):
     user_id = message.from_user.id
 
     if not is_admin(user_id):
-        bot.send_message(chat_id, "*You are not authorized to remove users.\nContact Owner:- ᚛ @Pk_Chopra ᚜*", parse_mode='Markdown')
+        bot.send_message(chat_id, "*You are not authorized to remove users.\nContact Owner:- ᚛ @DARK_BGMISELLER ᚜*", parse_mode='Markdown')
         return
 
     cmd_parts = message.text.split()
@@ -937,12 +937,12 @@ def attack_button_handler(message):
     found_user = next((user for user in users if user['user_id'] == user_id), None)
 
     if not found_user:
-        bot.send_message(chat_id, "*𝐘𝐨𝐮 𝐚𝐫𝐞 𝐧𝐨𝐭 𝐫𝐞𝐠𝐢𝐬𝐭𝐞𝐫𝐞𝐝. 𝐏𝐥𝐞𝐚𝐬𝐞 𝐫𝐞𝐝𝐞𝐞𝐦 𝐀 𝐤𝐞𝐲 𝐓𝐨 𝐎𝐰𝐧𝐞𝐫:- ᚛ @Pk_Chopra ᚜*", parse_mode='Markdown')
+        bot.send_message(chat_id, "*𝐘𝐨𝐮 𝐚𝐫𝐞 𝐧𝐨𝐭 𝐫𝐞𝐠𝐢𝐬𝐭𝐞𝐫𝐞𝐝. 𝐏𝐥𝐞𝐚𝐬𝐞 𝐫𝐞𝐝𝐞𝐞𝐦 𝐀 𝐤𝐞𝐲 𝐓𝐨 𝐎𝐰𝐧𝐞𝐫:- ᚛ @DARK_BGMISELLER ᚜*", parse_mode='Markdown')
         return
 
     valid_until = datetime.fromisoformat(found_user['valid_until'])
     if datetime.now() > valid_until:
-        bot.send_message(chat_id, "*𝐘𝐨𝐮𝐫 𝐤𝐞𝐲 𝐡𝐚𝐬 𝐞𝐱𝐩𝐢𝐫𝐞𝐝. 𝐏𝐥𝐞𝐚𝐬𝐞 𝐫𝐞𝐝𝐞𝐞𝐦 𝐀 𝐤𝐞𝐲 𝐓𝐨 𝐎𝐰𝐧𝐞𝐫:- ᚛ @Pk_Chopra ᚜.*", parse_mode='Markdown')
+        bot.send_message(chat_id, "*𝐘𝐨𝐮𝐫 𝐤𝐞𝐲 𝐡𝐚𝐬 𝐞𝐱𝐩𝐢𝐫𝐞𝐝. 𝐏𝐥𝐞𝐚𝐬𝐞 𝐫𝐞𝐝𝐞𝐞𝐦 𝐀 𝐤𝐞𝐲 𝐓𝐨 𝐎𝐰𝐧𝐞𝐫:- ᚛ @DARK_BGMISELLER ᚜.*", parse_mode='Markdown')
         return
 
     try:
@@ -1001,7 +1001,7 @@ def my_account(message):
         if datetime.now() > datetime.fromisoformat(found_user['valid_until']):
             account_info = (
                 "𝐘𝐨𝐮𝐫 𝐤𝐞𝐲 𝐡𝐚𝐬 𝐞𝐱𝐩𝐢𝐫𝐞𝐝. 𝐏𝐥𝐞𝐚𝐬𝐞 𝐫𝐞𝐝𝐞𝐞𝐦 𝐚 𝐧𝐞𝐰 𝐤𝐞𝐲.\n"
-                "Contact ᚛ @Pk_Chopra ᚜ for assistance."
+                "Contact ᚛ @DARK_BGMISELLER ᚜ for assistance."
             )
         else:
             account_info = (
@@ -1012,7 +1012,7 @@ def my_account(message):
                 f"ᴄᴜʀʀᴇɴᴛ ᴛɪᴍᴇ: {current_time}"
             )
     else:
-        account_info = "𝐏𝐥𝐞𝐚𝐬𝐞 𝐫𝐞𝐝𝐞𝐞𝐦 𝐀 𝐤𝐞𝐲 𝐓𝐨 𝐎𝐰𝐧𝐞𝐫:- ᚛ @Pk_Chopra ᚜."
+        account_info = "𝐏𝐥𝐞𝐚𝐬𝐞 𝐫𝐞𝐝𝐞𝐞𝐦 𝐀 𝐤𝐞𝐲 𝐓𝐨 𝐎𝐰𝐧𝐞𝐫:- ᚛ @DARK_BGMISELLER ᚜."
 
     bot.send_message(message.chat.id, account_info)
 
